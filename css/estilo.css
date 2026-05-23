@@ -1,0 +1,53 @@
+/* EESTILO GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+/* ESTILO DO CABEÇÇALHO */
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ela "cola" o primeiro e o último elemento nas bordas do container e divide o espaço restante de forma igual entre os elementos do meio. */
+}
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: white;
+    transform: scale(1.05);
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #Fa1580;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #Fa1580;
+}
+header .btn-contato button a{
+    color: black;
+}
