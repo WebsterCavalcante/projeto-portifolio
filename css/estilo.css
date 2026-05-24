@@ -10,6 +10,29 @@ body{
     background-color: black;
     height: 100vh;
 }
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #Fa1580;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #Fa1580;
+    transform: scale(1.05);
+}
+.btn-contato button a{
+    color: black;
+}
+.btn-contato button a:hover{
+    color: black;
+}
 /* ESTILO DO CABEÇÇALHO */
 header{
     padding: 40px 4%;
@@ -36,18 +59,37 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #Fa1580;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-site{
+    padding: 40px 4%;
 }
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #Fa1580;
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
 }
-header .btn-contato button a{
-    color: black;
+.topo-site .txt-topo h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-site .txt-topo h1 > span{
+    color: #Fa1580;
+}
+.topo-site .txt-topo p{
+    color: white;
+    margin: 40px 0;
+}
+.topo-site .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }
